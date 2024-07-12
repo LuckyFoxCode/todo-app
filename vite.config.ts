@@ -5,7 +5,7 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './todo-app',
+  base: '/todo-app',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
