@@ -1,0 +1,12 @@
+@import '@fontsource/rubik';
+@import '@fontsource/montserrat';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-light font-rubik dark:bg-night;
+  }
+}
