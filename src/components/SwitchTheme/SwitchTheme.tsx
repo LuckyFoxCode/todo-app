@@ -8,16 +8,14 @@ export const SwitchTheme = ({ className, ...rest }: SwitchThemeProps) => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    const root = document.documentElement;
+    root.classList.toggle('dark', theme === 'dark');
 
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
+  const toggleTheme = () =>
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
 
   return (
     <button
