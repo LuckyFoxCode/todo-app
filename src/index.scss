@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  body {
     @apply bg-light font-rubik dark:bg-night;
   }
 }

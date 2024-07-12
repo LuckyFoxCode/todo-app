@@ -1,0 +1,1 @@
+export { TheHeaderLogo } from './TheHeaderLogo';

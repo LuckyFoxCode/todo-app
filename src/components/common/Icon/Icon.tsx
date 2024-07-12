@@ -9,7 +9,7 @@ export const Icon = ({
 }: IconProps) =>
   IconComponent && (
     <IconComponent
-      className={cn(className)}
+      className={cn('transition-colors duration-300', className)}
       size={size}
       {...rest}
     />
