@@ -1,8 +1,7 @@
 import { TheHeader } from '@/components';
 
-export const App = () => (
+export const Root = () => (
   <>
-    {/* <h1>Todo App</h1> */}
     <TheHeader />
   </>
 );

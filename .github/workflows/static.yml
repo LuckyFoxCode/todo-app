@@ -38,6 +38,8 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build
+        env:
+          VITE_BASE_URL: ${{ secrets.VITE_BASE_URL }}
         run: yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v4
