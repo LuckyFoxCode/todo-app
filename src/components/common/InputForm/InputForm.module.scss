@@ -1,0 +1,23 @@
+.wrapper {
+  @apply flex flex-col gap-y-1 font-montserrat;
+}
+
+.label {
+  @apply text-sm capitalize text-slate-700;
+}
+
+.input {
+  @apply w-full rounded-lg bg-slate-200 px-8 py-2 text-slate-600 shadow-md shadow-transparent transition-all duration-300;
+
+  &:focus {
+    @apply bg-light shadow-slate-300 outline-none;
+  }
+}
+
+.icon {
+  @apply absolute left-2 top-1/2 -translate-y-1/2 text-slate-600;
+}
+
+.error {
+  @apply flex items-center text-sm text-n-0;
+}
